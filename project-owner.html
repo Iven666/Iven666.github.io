@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目发起方 - 慈善基金DAPP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>项目发起方</h1>
+        <a href="index.html" class="btn" style="background-color: #666;">返回首页</a>
+        
+        <div class="project-form">
+            <h2>创建新项目</h2>
+            <div class="form-group">
+                <label for="projectName">项目名称</label>
+                <input type="text" id="projectName" required>
+            </div>
+            <div class="form-group">
+                <label for="projectDescription">项目描述</label>
+                <textarea id="projectDescription" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="targetAmount">目标金额 (ETH)</label>
+                <input type="number" id="targetAmount" step="0.01" required>
+            </div>
+            <button onclick="createProject()" class="btn">创建项目</button>
+        </div>
+
+        <h2>我的项目</h2>
+        <div id="myProjects" class="project-list"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <script src="js/project-owner.js"></script>
+</body>
+</html> 
