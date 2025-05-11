@@ -2,7 +2,7 @@ let web3;
 let contract;
 let accounts;
 
-const contractAddress = '0x1d53FB6D428694FC7a4Ad2911619686dD9981203'; // 部署后替换
+const contractAddress = '0x49F1F075f2D96918f1c104FBF7d54DA112470cA0'; // 部署后替换
 const contractABI = [
     {
       "anonymous": false,
